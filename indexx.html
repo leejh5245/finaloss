@@ -4,63 +4,77 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>자기소개</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <style>
         body {
-            background-color: #f8f9fa;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
         }
-        .profile-img {
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .header h1 {
+            margin: 0;
+        }
+        .profile-pic {
             width: 150px;
             height: 150px;
             border-radius: 50%;
             object-fit: cover;
+            display: block;
+            margin: 0 auto 20px;
         }
-        .intro-section {
-            margin-top: 50px;
+        .section {
+            margin-bottom: 20px;
+        }
+        .section h2 {
+            border-bottom: 2px solid #4CAF50;
+            padding-bottom: 5px;
+        }
+        .contact-info {
+            list-style: none;
+            padding: 0;
+        }
+        .contact-info li {
+            margin: 5px 0;
         }
     </style>
 </head>
 <body>
-    <div class="container intro-section text-center">
-        <img src="https://via.placeholder.com/150" alt="Profile Picture" class="profile-img">
-        <h1 class="my-3">홍길동</h1>
-        <p class="lead">안녕하세요! 저는 홍길동입니다. 웹 개발자이며, 다양한 웹 기술에 관심이 많습니다.</p>
-        <div class="row justify-content-center mt-5">
-            <div class="col-md-4">
-                <h3>경력</h3>
-                <ul class="list-group">
-                    <li class="list-group-item">2020-2022: ABC 회사 - 프론트엔드 개발자</li>
-                    <li class="list-group-item">2018-2020: XYZ 회사 - 백엔드 개발자</li>
-                </ul>
-            </div>
-            <div class="col-md-4">
-                <h3>학력</h3>
-                <ul class="list-group">
-                    <li class="list-group-item">2014-2018: 서울대학교 - 컴퓨터공학과</li>
-                </ul>
-            </div>
+    <div class="container">
+        <div class="header">
+            <h1>자기소개</h1>
         </div>
-        <div class="row justify-content-center mt-5">
-            <div class="col-md-4">
-                <h3>기술</h3>
-                <ul class="list-group">
-                    <li class="list-group-item">HTML, CSS, JavaScript</li>
-                    <li class="list-group-item">React, Vue.js</li>
-                    <li class="list-group-item">Node.js, Express</li>
-                    <li class="list-group-item">MongoDB, MySQL</li>
-                </ul>
-            </div>
-            <div class="col-md-4">
-                <h3>취미</h3>
-                <ul class="list-group">
-                    <li class="list-group-item">코딩</li>
-                    <li class="list-group-item">독서</li>
-                    <li class="list-group-item">여행</li>
-                </ul>
-            </div>
+        <img src="profile-picture.jpg" alt="Profile Picture" class="profile-pic">
+        <div class="section">
+            <h2>개인 정보</h2>
+            <p>안녕하세요! 저는 [이름]입니다. [나이]살이며, [도시]에 살고 있습니다.</p>
+        </div>
+        <div class="section">
+            <h2>학력 및 경력</h2>
+            <p>[학교 이름]에서 [전공]을 전공했으며, 현재 [회사 이름]에서 [직무]로 일하고 있습니다.</p>
+        </div>
+        <div class="section">
+            <h2>관심사 및 취미</h2>
+            <p>저는 [관심사/취미]을(를) 좋아합니다. 여가 시간에는 [활동]을 즐깁니다.</p>
+        </div>
+        <div class="section">
+            <h2>연락처 정보</h2>
+            <ul class="contact-info">
+                <li>이메일: <a href="mailto:youremail@example.com">youremail@example.com</a></li>
+                <li>전화번호: [전화번호]</li>
+                <li>웹사이트: <a href="http://yourwebsite.com">yourwebsite.com</a></li>
+            </ul>
         </div>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
 </body>
 </html>
